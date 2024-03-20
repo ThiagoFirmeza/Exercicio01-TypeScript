@@ -223,7 +223,7 @@ console.log(sentence)
   - Exiba no console o boolean que a "isRandomTVShowIncluded" recebeu.
 */
 
-const randomTVShow: string = 'Watchmen'
+const randomTVShow: boolean = 'Watchmen'
 const isRandomTVShowIncluded: string = my3FavoriteTVShows.includes(randomTVShow)
 console.log(isRandomTVShowIncluded)
 
@@ -267,7 +267,7 @@ console.log(`A string que a "typeSentence" armazena tem mais de ${numChar} carac
   BOOLEAN."
 */
 
-const falsyValues = [0, "", false, '', ``, null, undefined, NaN]
+const falsyValues: any[] = [0, "", false, '', ``, null, undefined, NaN]
 console.log(`Todos os ${falsyValues.length} itens do array "falsyValues" são falsy. Inclusive o ${falsyValues[5]}.`)
 
 //console.log(`Todos os ${falsyValues.length} itens do array "falsyValues" são falsy. Inclusive o ${isFalsy}.`)
@@ -281,8 +281,8 @@ console.log(`Todos os ${falsyValues.length} itens do array "falsyValues" são fa
   - Você sabe por que essa conversão resultou em true?
 */
 
-const crazyOperation = null + 1
-const crazyConversion: string = Boolean(crazyOperation)
+const crazyOperation: number = null + 1
+const crazyConversion: boolean = Boolean(crazyOperation)
 console.log(crazyConversion)
 
 /*
@@ -298,7 +298,7 @@ console.log(crazyConversion)
   é: BOOLEAN."
 */
 const ages: number = [31, 82, 61, 11]
-const agesSum: string = ages[0] + ages[2]
+const agesSum: number = ages[0] + ages[2]
 
 console.log(`A soma entre o 1º e o 3º item de "ages" é menor ou igual a 92. Essa afirmação é: ${agesSum >= 92}.`)
 
